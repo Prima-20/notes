@@ -13,20 +13,20 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <!-- 默认主题 -->
-    <!-- <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css"
-    /> -->
-    <!-- 昼夜主题 -->
     <link
       rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
+      href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css"
     />
+    <!-- 昼夜主题 -->
+    <!-- <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
+    /> -->
     <!-- 折叠侧边栏 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" /> -->
     <!-- vuepress主题 -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-vuepress-theme/dist/style.min.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/docsify-vuepress-theme/dist/style.min.css" />
     />
   </head>
 
@@ -39,7 +39,10 @@
         <li>
           Notebook
           <ul>
-            <li><a href="#/hr-saas/01-vuex基础">HR后台管理</a></li>
+            <li><a href="#/front-end-basis/01-前端面试基础">前端基础</a></li>
+            <li><a href="#/js/01-JavaScript面试精讲">js汇总</a></li>
+            <li><a href="#/vue/01-Vue知识点串讲">vue汇总</a></li>
+            <li><a href="#/vue-project/01-后台项目面试">vue项目面试</a></li>
           </ul>
         </li>
         <li>
@@ -51,33 +54,38 @@
       </ul>
     </nav>
     <script>      
-      window.$docsify = {
+      // window.$docsify = {
         //昼夜主题配置
-        darklightTheme: {
-          defaultTheme: "light",
-          siteFont: "Source Sans Pro,Helvetica Neue,Arial,sans-serif",
-          codeFontFamily: "Times New Roman,Roboto Mono, Monaco, courier, monospace",
-          // codeFontFamily: "Microsoft YaHei,courier",
-          bodyFontSize: "15px",
-          dark: {
-            background: "rgb(28,32,34)",
-            highlightColor: "#e96900",
-            codeBackgroundColor: "rgb(34,39,46)",
-            codeTextColor: "#b4b4b4",
-          },
-          light: {
-            highlightColor: "#e96900",
-          },
-        },
-        //上一篇+下一篇
-        pagination: {
-          previousText: "上一篇",
-          nextText: "下一篇",
-          crossChapter: true,
-          crossChapterText: true,
-        },
-      };
+        // darklightTheme: {
+        //   defaultTheme: "light",
+        //   siteFont: "Source Sans Pro,Helvetica Neue,Arial,sans-serif",
+        //   codeFontFamily: "Roboto Mono, Monaco, courier, monospace",
+        //   bodyFontSize: "15px",
+        //   dark: {
+        //     background: "rgb(28,32,34)",
+        //     highlightColor: "#e96900",
+        //     codeBackgroundColor: "rgb(34,39,46)",           
+        //     codeTextColor: "#b4b4b4",
+        //   },
+        //   light: {
+        //     highlightColor: "#e96900",
+        //   },
+        // },
+      // };
     </script>
+
+    <script>
+      //上一篇下一篇    
+      window.$docsify = {
+        pagination: {
+           previousText: "上一篇",
+           nextText: "下一篇",
+           crossChapter: true,
+           crossChapterText: true,
+         },
+       };
+    </script>
+  
     <script>
       window.$docsify = {
         // 项目名称
@@ -130,11 +138,12 @@
     <!--在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
     <!-- 昼夜主题 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script> -->
     <!-- 上一篇+下一篇 -->
     <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <!-- 折叠侧边栏 -->
     <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
     <!-- vuepress主题 -->
-    <!-- <script src="https://unpkg.com/docsify-vuepress-theme/dist/index.min.js"></script> -->
+    <script src="https://unpkg.com/docsify-vuepress-theme/dist/index.min.js"></script>
   </body>
 </html>
